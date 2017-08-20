@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:id="@+id/dateMon"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:id="@+id/dateTues"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:id="@+id/dateWed"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:id="@+id/dateThu"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:id="@+id/dateFri"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:id="@+id/Monday"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:id="@+id/Tuesday"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:id="@+id/Wednesday"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:id="@+id/Thursday"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:id="@+id/Friday"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridView1"
+            android:numColumns="5"
+            android:stretchMode="columnWidth"
+            android:textAlignment="center"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            android:layout_margin="0dp"
+            android:background="@android:color/black"
+            android:clickable="true" />
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

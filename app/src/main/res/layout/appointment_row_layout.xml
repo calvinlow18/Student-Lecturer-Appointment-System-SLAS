@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/color_row"
+                    >
+
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/app_date"
+                            android:phoneNumber="false"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"/>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/app_Time"
+                            android:phoneNumber="false"
+                            android:paddingLeft="20dp"/>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Lecturer"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/app_lect"
+                            android:phoneNumber="false"
+                            android:paddingLeft="20dp"/>
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="Student"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/app_student"
+                            android:phoneNumber="false"
+                            android:paddingLeft="20dp"
+                            android:paddingBottom="10dp" />
+                </LinearLayout>
+</FrameLayout>

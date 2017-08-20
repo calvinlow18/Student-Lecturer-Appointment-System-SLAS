@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Lecture Name"
+        android:id="@+id/lectinfoName"
+        android:layout_marginTop="56dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:layout_below="@+id/lectinfoName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="30dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView4"
+                android:layout_column="0"
+                android:src="@drawable/email"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Lecturer Email"
+                android:id="@+id/lectinfoEmail"
+                android:layout_below="@+id/lectinfoName"
+                android:layout_alignStart="@+id/lectinfoName"
+                android:layout_column="2"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView5"
+                android:layout_column="0"
+                android:src="@drawable/department"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Lecturer Department"
+                android:id="@+id/lectinfoDept"
+                android:layout_below="@+id/lectinfoEmail"
+                android:layout_alignStart="@+id/lectinfoEmail"
+                android:layout_column="2"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/phonelogo"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Lecturer Number"
+                android:id="@+id/lectinfoNum"
+                android:layout_below="@+id/lectinfoDept"
+                android:layout_alignStart="@+id/lectinfoDept"
+                android:layout_column="2"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView6"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/office" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Lecturer Office"
+                android:id="@+id/lectinfoOffice"
+                android:layout_above="@+id/tableLayout"
+                android:layout_alignParentStart="true"
+                android:layout_column="2"
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center_vertical" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</RelativeLayout>

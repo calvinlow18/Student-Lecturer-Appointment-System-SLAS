@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".RoleSelectionActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/sunway"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="102dp"
+        android:src="@drawable/sunway"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:text="@string/lecturer_label"
+                android:id="@+id/lecturer_button"
+                android:clickable="true"
+                android:onClick="clickLect"
+                android:src="@drawable/lecturer"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:text="@string/student_label"
+                android:id="@+id/student_button"
+                android:clickable="true"
+                android:onClick="clickStu"
+                android:src="@drawable/student"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Lecturer"
+                android:id="@+id/lect_label"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Student"
+                android:id="@+id/stu_label"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
